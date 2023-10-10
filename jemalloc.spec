@@ -68,7 +68,7 @@ cat /sys/kernel/mm/transparent_hugepage/enabled || true
 echo "What kernel version and config is this?"
 uname -a
 
-%configure %{?disable_thp} %{?lg_page} --enable-prof
+%configure %{?disable_thp} %{?lg_page} --enable-prof --enable-prof-libunwind
 make %{?_smp_mflags}
 
 
