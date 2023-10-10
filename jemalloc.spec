@@ -8,7 +8,7 @@ License:        BSD
 URL:            http://www.canonware.com/jemalloc/
 Source0:        https://github.com/jemalloc/%{name}/releases/download/%{version}/%{name}-%{version}.tar.bz2
 
-BuildRequires:  gcc
+BuildRequires:  gcc libunwind
 BuildRequires:  /usr/bin/xsltproc
 BuildRequires:  perl-generators
 %ifnarch s390 %{mips}
